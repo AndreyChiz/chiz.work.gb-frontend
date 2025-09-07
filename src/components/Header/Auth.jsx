@@ -15,7 +15,7 @@ export default function Auth() {
                 console.log("Тело:", result.data?.body);
                 console.log("Заголовки:", result.data?.headers);
                 console.log("Статус:", result.data?.status);  // headers
-                alert(result.meta?.headers);
+                alert(JSON.stringify(result.data?.body, null, 2));
             } else if (result.error) {
                 console.error('Ошибка запроса:', result.error);
                 alert(`Ошибка: ${result.error.status} - ${result.error.data}`);
@@ -27,7 +27,7 @@ export default function Auth() {
     };
 
 
-    
+
     return (
         <div className={styles.auth}>
             <Button type="outline" onClick={handleClick} disabled={isLoading}>

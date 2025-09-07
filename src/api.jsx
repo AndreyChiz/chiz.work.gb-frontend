@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import axios from "axios";
-import API_URL from "./config"
+import {API_URL} from "./config"
 
 // axios instance
 const apiClient = axios.create({
