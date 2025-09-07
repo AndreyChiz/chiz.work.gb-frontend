@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-
+yarn build
 # Путь к билду фронта
 FRONTEND_DIST="/home/www/src/chiz.work.gb-frontend/dist"
 
