@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 import Button from '../common/Button/Button';
-import { useGetMeQuery } from '../../api';
+import { useGetMeQuery } from '../../api/baseApi';
 
 export default function Auth() {
     // ✅ для query
@@ -27,5 +27,3 @@ export default function Auth() {
         </div>
     );
 }
-
-

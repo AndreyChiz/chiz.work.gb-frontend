@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { api } from './api'; // твой axiosBaseQuery api
+import { api } from './api/baseApi'; // твой axiosBaseQuery api
 
 export const store = configureStore({
     reducer: {
