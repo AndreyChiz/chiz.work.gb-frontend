@@ -1,4 +1,4 @@
 
-const API_URL = 'https://chiz.work.gd/api'
+const HOST_URL = 'https://chiz.work.gd'
 
-export { API_URL }
+export { HOST_URL }
