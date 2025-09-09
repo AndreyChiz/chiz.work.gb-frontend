@@ -1,6 +1,6 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { createApi } from "@reduxjs/toolkit/query/react";
 import axios from "axios";
-import {API_URL} from "./config"
+import { API_URL } from "./config"
 
 // axios instance
 const apiClient = axios.create({
@@ -39,13 +39,29 @@ export const api = createApi({
     reducerPath: "api",
     baseQuery: axiosBaseQuery({ baseUrl: "" }),
     endpoints: (builder) => ({
-        getMe: builder.mutation({
-            query: () => ({
+        getMe: builder.query({
+            query: (id = 1) => ({
                 url: "/me",
-                method: "post",
+                method: "GET",
+                params: { id },
             }),
             transformResponse: (response) => {
-                // response = axios response
+                return {
+                    body: response.data,
+                    headers: response.headers,
+                    status: response.status,
+                };
+            },
+        }),
+
+        // 🔥 новый endpoint
+        register: builder.mutation({
+            query: ({ login, password, email, phone }) => ({
+                url: "/register",
+                method: "POST",
+                data: { login, password, email, phone },
+            }),
+            transformResponse: (response) => {
                 return {
                     body: response.data,
                     headers: response.headers,
@@ -56,4 +72,5 @@ export const api = createApi({
     }),
 });
 
-export const { useGetMeMutation } = api;
+
+export const { useGetMeQuery, useRegisterMutation } = api;

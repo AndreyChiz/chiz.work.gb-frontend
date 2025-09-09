@@ -1,39 +1,31 @@
 import styles from './Header.module.css';
 import Button from '../common/Button/Button';
-import { useGetMeMutation } from '../../api';
+import { useGetMeQuery } from '../../api';
 
 export default function Auth() {
-    // создаём хук мутации
-    const [getMe, { data, error, isLoading }] = useGetMeMutation();
+    // ✅ для query
+    const { data, error, isLoading } = useGetMeQuery(1);
 
-    const handleClick = async () => {
-        try {
-            // НЕ используем unwrap(), чтобы получить meta/headers
-            const result = await getMe();
-
-            if (result.data) {
-                console.log("Тело:", result.data?.body);
-                console.log("Заголовки:", result.data?.headers);
-                console.log("Статус:", result.data?.status);  // headers
-                alert(JSON.stringify(result.data?.body, null, 2));
-            } else if (result.error) {
-                console.error('Ошибка запроса:', result.error);
-                alert(`Ошибка: ${result.error.status} - ${result.error.data}`);
-            }
-        } catch (err) {
-            console.error('Исключение:', err);
-            alert('Произошла ошибка при запросе');
+    const handleClick = () => {
+        if (data) {
+            console.log("Тело:", data.body);
+            console.log("Заголовки:", data.headers);
+            console.log("Статус:", data.status);
+            alert(JSON.stringify(data.body, null, 2));
+        } else if (error) {
+            console.error("Ошибка запроса:", error);
+            alert(`Ошибка: ${error.status} - ${error.data}`);
         }
     };
-
-
 
     return (
         <div className={styles.auth}>
             <Button type="outline" onClick={handleClick} disabled={isLoading}>
-                {isLoading ? 'Загрузка...' : 'Войти'}
+                {isLoading ? "Загрузка..." : "Войти"}
             </Button>
             <Button type="default">Зарегистрироваться</Button>
         </div>
     );
 }
+
+
