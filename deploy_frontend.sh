@@ -2,10 +2,10 @@
 set -e
 yarn build
 # Путь к билду фронта
-FRONTEND_DIST="/home/www/src/chiz.work.gb-frontend/dist"
+FRONTEND_DIST="/home/www/src/chiz.work.gb/spa/dist"
 
 # Путь для публикации
-PUBLIC_SITE="/home/www/public_sites/chiz.work.gd-frontend"
+PUBLIC_SITE="/home/www/public_sites/chiz.work.gd-spa"
 
 # Проверка наличия dist
 if [ ! -d "$FRONTEND_DIST" ]; then
