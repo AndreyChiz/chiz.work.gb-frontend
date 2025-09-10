@@ -15,7 +15,7 @@ export default function Auth() {
 
     const [
         register,
-        {data: registerData, error: registerError, isLoading: registerIsLoading}
+        { data: registerData, error: registerError, isLoading: registerIsLoading }
     ] = useRegisterMutation()
 
     const [
@@ -34,8 +34,8 @@ export default function Auth() {
             alert(`Ошибка: ${getMeError.status} - ${getMeError.data}`);
         }
     };
-    
-    const handleRegClick = () =>{
+
+    const handleRegClick = () => {
         refreshToken()
         register()
 
@@ -45,6 +45,7 @@ export default function Auth() {
 
     return (
         <div className={styles.auth}>
+
             <Button
                 type="outline"
                 onClick={handleClick}

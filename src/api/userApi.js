@@ -18,7 +18,7 @@ export const userApi = api.injectEndpoints({
         //         method: "POST",
         //         data: { login, password, email, phone },
         //     }),
-        //     transformResponse: (response) => {
+        //     transformResponse: (response) => { // получить заголовки только так
         //         return {
         //             body: response.data,
         //             headers: response.headers,
@@ -31,7 +31,7 @@ export const userApi = api.injectEndpoints({
 });
 
 
-export const { useGetMeQuery, useLazyGetMeQuery} = api;
+export const { useGetMeQuery, useLazyGetMeQuery } = api;
 
 
 // endpoints: (builder) => ({
