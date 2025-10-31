@@ -1,0 +1,13 @@
+services:
+  spa:
+    build: .
+    container_name: chiz-spa
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    command: yarn dev
+    environment:
+      - NODE_ENV=development
+    restart: unless-stopped
