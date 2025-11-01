@@ -1,5 +1,6 @@
 {
-  "name": "chiz.work.gb-frontend",
+  "project_name": "chiz_work_gd",
+  "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",

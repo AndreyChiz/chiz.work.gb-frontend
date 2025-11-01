@@ -25,10 +25,21 @@ pipeline {
                 script {
                     def name = sh(script: "jq -r '.name' package.json", returnStdout: true).trim()
                     def version = sh(script: "jq -r '.version' package.json", returnStdout: true).trim()
-                    env.IMAGE_NAME = "${name}:${version}"
+                    def project_name = sh(script: "jq -r '.project_name' package.json", returnStdout: true).trim() 
+                    
+                    
+                    env.HOST = "chiz.work.gd"
+                    env.PROJECT_NAME = "${project_name}"
+                    env.IMAGE_NAME = "${project_name}-${name}:${version}"
+                    env.CONTAINER_NAME = "${project_name}-${name}"
+                    
+                    
 
-                    echo "🔹 IMAGE_NAME=${env.IMAGE_NAME}"
-                    echo "🔹 REGISTRY=${env.REGISTRY}"
+                    echo "⚠️ PROJECT_NAME=${env.PROJECT_NAME}"
+                    echo "⚠️ IMAGE_NAME=${env.IMAGE_NAME}"
+                    echo "⚠️ CONTAINER_NAME=${env.CONTAINER_NAME}"
+                    echo "⚠️ REGISTRY=${env.REGISTRY}"
+                    echo "⚠️ HOST=${env.HOST}"
                 }
             }
         }
