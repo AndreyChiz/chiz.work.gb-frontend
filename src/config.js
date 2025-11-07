@@ -1,4 +1,7 @@
 
-const HOST_URL = 'https://chiz.work.gd'
+const HOST_URL = 'http://localhost:8080'
 
 export { HOST_URL }
+
+
+
