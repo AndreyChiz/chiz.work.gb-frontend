@@ -1,14 +1,22 @@
-import styles from './Header.module.css'
-import Logo from './Logo'
-import Menu from './Menu'
-import Auth from './Auth'
+import Logo from "./Logo"
+import WrapperHeader from "./WrapperHeader"
+import HeaderNav from "./HeaderNav/HeaderNav";
+
+
+
+import { fetchUIData } from "../../api/mock/mockDataTopBar";
+
+
+let data = fetchUIData().ui.header
 
 export default function Header() {
+
     return (
-        <header className={styles.header}>
-            <Logo />
-            <Menu />
-            <Auth />
-        </header>
+        <WrapperHeader>
+            <Logo text={data.LogoText} />
+            <HeaderNav />
+
+        </WrapperHeader>
     )
+
 }
