@@ -1,14 +1,18 @@
-import styles from './Header.module.css'
-import Logo from './Logo'
-import Menu from './Menu'
-import Auth from './Auth'
+import Logo from "./Logo"
+import WrapperHeader from "./WrapperHeader"
+
+
 
 export default function Header() {
+
+
+    const LogoText = "ACV development"
+
     return (
-        <header className={styles.header}>
-            <Logo />
-            <Menu />
-            <Auth />
-        </header>
+        <WrapperHeader>
+        <Logo text={LogoText}/>
+
+        </WrapperHeader>
     )
+
 }
