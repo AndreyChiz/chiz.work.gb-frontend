@@ -2,7 +2,7 @@
 export function fetchTopBarData() {
     return {
         ui: {
-            "top-bar": {
+            topBar: {
                 common: [
                     { icon: "icon-envelope-open-o", label: "andrey.chizhov.dev@gmail.com", href: "#" },
                     { icon: "icon-phone", label: "8 (960)-859-53-04", href: "#" },
@@ -13,6 +13,8 @@ export function fetchTopBarData() {
                 ],
             },
             header: {
+                LogoText: "LogoText",
+
                 nav: [
                     { label: "Home", href: "/" },
                     { label: "Services", href: "/services" },

@@ -3,15 +3,16 @@ import WrapperHeader from "./WrapperHeader"
 
 
 
+import { fetchTopBarData } from "../../api/mock/mockDataTopBar";
+
+
+LogoText = fetchTopBarData().ui.header.LogoText
+
 export default function Header() {
-
-
-    const LogoText = "ACV development"
 
     return (
         <WrapperHeader>
         <Logo text={LogoText}/>
-
         </WrapperHeader>
     )
 
