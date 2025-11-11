@@ -1,18 +1,21 @@
 import Logo from "./Logo"
 import WrapperHeader from "./WrapperHeader"
+import HeaderNav from "./HeaderNav/HeaderNav";
 
 
 
-import { fetchTopBarData } from "../../api/mock/mockDataTopBar";
+import { fetchUIData } from "../../api/mock/mockDataTopBar";
 
 
-LogoText = fetchTopBarData().ui.header.LogoText
+let data = fetchUIData().ui.header
 
 export default function Header() {
 
     return (
         <WrapperHeader>
-        <Logo text={LogoText}/>
+            <Logo text={data.LogoText} />
+            <HeaderNav />
+
         </WrapperHeader>
     )
 

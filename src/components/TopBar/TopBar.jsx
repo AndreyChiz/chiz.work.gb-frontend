@@ -1,9 +1,9 @@
 import { Contacts } from "./Contacts";
 import WrapperTopBar from "./WrapperTopBar";
-import { fetchTopBarData } from "../../api/mock/mockDataTopBar";
+import { fetchUIData } from "../../api/mock/mockDataTopBar";
 
 export default function TopBar() {
-    const data = fetchTopBarData().ui.topBar;
+    const data = fetchUIData().ui.topBar;
 
     return (
         <WrapperTopBar>

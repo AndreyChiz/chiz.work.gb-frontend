@@ -1,5 +1,5 @@
 
-export function fetchTopBarData() {
+export function fetchUIData() {
     return {
         ui: {
             topBar: {
@@ -13,16 +13,33 @@ export function fetchTopBarData() {
                 ],
             },
             header: {
-                LogoText: "LogoText",
+                LogoText: "AVC-development",
 
                 nav: [
-                    { label: "Home", href: "/" },
-                    { label: "Services", href: "/services" },
-                    { label: "About Us", href: "/about" },
-                    { label: "Press", href: "/press" },
-                    { label: "Testimonials", href: "/testimonials" },
-                    { label: "Blog", href: "/blog" },
-                    { label: "Contact", href: "/contact" },
+                    { label: "Home", href: "#home-section" },
+                    { label: "Services", href: "#services-section" },
+                    {
+                        label: "About Us",
+                        href: "#about-section",
+                        children: [
+                            { label: "Team", href: "#team-section" },
+                            { label: "Pricing", href: "#pricing-section" },
+                            { label: "FAQ", href: "#faq-section" },
+                            {
+                                label: "More Links",
+                                href: "#",
+                                children: [
+                                    { label: "Menu One", href: "#" },
+                                    { label: "Menu Two", href: "#" },
+                                    { label: "Menu Three", href: "#" },
+                                ],
+                            },
+                        ],
+                    },
+                    { label: "Press", href: "#press-section" },
+                    { label: "Testimonials", href: "#testimonials-section" },
+                    { label: "Blog", href: "#blog-section" },
+                    { label: "Contact", href: "#contact-section" },
                 ],
             },
         },
