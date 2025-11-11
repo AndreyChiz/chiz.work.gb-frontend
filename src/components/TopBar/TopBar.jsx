@@ -1,28 +1,14 @@
-import Contacts from './Contacts';
+import { Contacts } from "./Contacts";
 import WrapperTopBar from "./WrapperTopBar";
-
-
+import { fetchTopBarData } from "../../api/mock/mockDataTopBar";
 
 export default function TopBar() {
-
-
-    const Common = [
-        { icon: "icon-envelope-open-o", label: "andrey.chizhov.dev@gmail.com", href: "#" },
-        { icon: "icon-phone", label: "+7 (960)-859-53-04", href: "#" },
-    ];
-
-    const Social = [
-        { icon: "icon-twitter", label: "Twitter", href: "#" },
-        { icon: "icon-instagram", label: "Instagram", href: "#" },
-    ];
-
+    const data = fetchTopBarData().ui["top-bar"];
 
     return (
         <WrapperTopBar>
-            <Contacts items={Common} wrapperClass="contacts" />
-            <Contacts items={Social} wrapperClass="socials" />
+            <Contacts items={data.common} wrapperClass="contacts" />
+            <Contacts items={data.social} wrapperClass="socials" />
         </WrapperTopBar>
-
-
     );
 }
