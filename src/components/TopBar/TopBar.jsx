@@ -1,4 +1,6 @@
 import Contacts from './Contacts';
+import WrapperTopBar from "./WrapperTopBar";
+
 
 
 export default function TopBar() {
@@ -16,15 +18,11 @@ export default function TopBar() {
 
 
     return (
-        <div className="top-bar">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12 d-flex justify-content-between align-items-center">
-                        <Contacts items={Common} wrapperClass="contacts" />
-                        <Contacts items={Social} wrapperClass="socials" />
-                    </div>
-                </div>
-            </div>
-        </div>
+        <WrapperTopBar>
+            <Contacts items={Common} wrapperClass="contacts" />
+            <Contacts items={Social} wrapperClass="socials" />
+        </WrapperTopBar>
+
+
     );
 }
