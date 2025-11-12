@@ -1,6 +1,3 @@
-import React from "react";
-import { fetchUIData } from "../../../api/mock/mockDataTopBar";
-
 function NavItem({ item }) {
     const hasChildren = item.children && item.children.length > 0;
 
@@ -20,13 +17,12 @@ function NavItem({ item }) {
     );
 }
 
-export default function HeaderNavMenu() {
-    const { ui } = fetchUIData();
+export default function HeaderNavMenu({menuItems}) {
 
     return (
         <nav className="site-navigation text-right ml-auto" role="navigation">
             <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                {ui.header.nav.map((item, index) => (
+                {menuItems.map((item, index) => (
                     <NavItem key={index} item={item} />
                 ))}
             </ul>

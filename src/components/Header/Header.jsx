@@ -1,21 +1,20 @@
+import { useContext } from "react";
+
+import { UIContext } from "../../UIContext.jsx";
+
 import Logo from "./Logo"
 import WrapperHeader from "./WrapperHeader"
 import HeaderNav from "./HeaderNav/HeaderNav";
 
 
 
-import { fetchUIData } from "../../api/mock/mockDataTopBar";
-
-
-let data = fetchUIData().ui.header
 
 export default function Header() {
-
+    const headerItems = useContext(UIContext).header
     return (
         <WrapperHeader>
-            <Logo text={data.LogoText} />
-            <HeaderNav />
-
+            <Logo text={headerItems.logoText} />
+            <HeaderNav menuItems={headerItems.navMenu}/>
         </WrapperHeader>
     )
 
