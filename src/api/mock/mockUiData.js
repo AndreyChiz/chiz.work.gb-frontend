@@ -4,12 +4,12 @@ export function fetchUIData() {
         ui: {
             contacts: {
                 common: [
-                    { icon: "icon-envelope-open-o", label: "andrey.chizhov.dev@gmail.com", href: "#" },
-                    { icon: "icon-phone", label: "8 (960)-859-53-04", href: "#" },
+                    { icon: "icon-envelope-open-o", label: "andrey.chizhov.dev@gmail.com", href: "mailto:andrey.chizhov.dev@gmail.com" },
+                    { icon: "icon-phone", label: "+7 (960)-859-53-04", href: "tel:+79608595304" },
                 ],
                 social: [
-                    { icon: "icon-twitter", label: "Twitter", href: "#" },
-                    { icon: "icon-instagram", label: "Instagram", href: "#" },
+                    { icon: "icon-vk", label: "VK", href: "https://vk.com/chizhov_net" },
+                    { icon: "icon-telegram", label: "Telegram", href: "https://t.me/iamChizhov" },
                 ],
             },
             header: {

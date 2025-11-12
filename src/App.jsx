@@ -1,6 +1,7 @@
-import React from "react";
 import TopBar from "./components/TopBar/TopBar";
 import Header from "./components/Header/Header";
+import MainContent from "./components/MainContent/MainContent";
+import GlobalWrapper from "./components/global/GlobalWrapper";
 
 import { UIProvider } from "./UIContext";
 
@@ -8,8 +9,13 @@ import { UIProvider } from "./UIContext";
 export default function App() {
   return (
     <UIProvider>
-      <TopBar />
-      <Header />
+      <GlobalWrapper>
+
+        <TopBar />
+        <Header />
+        <MainContent />
+
+      </GlobalWrapper>
     </UIProvider>
   )
 }
