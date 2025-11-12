@@ -1,12 +1,14 @@
+
 import WrapperHeaderNav from "./WrapperHeaderNav"
 import HeaderNavMenu from "./HeaderNavMenu"
 
-export default function HeaderNav (){
+
+export default function HeaderNav({ menuItems }) {
 
     return (
-    <WrapperHeaderNav>
-        <HeaderNavMenu/>
-    </WrapperHeaderNav>
+        <WrapperHeaderNav>
+            <HeaderNavMenu menuItems={menuItems} />
+        </WrapperHeaderNav>
 
     )
 }

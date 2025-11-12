@@ -1,14 +1,16 @@
+import { useContext } from "react";
 import { Contacts } from "./Contacts";
 import WrapperTopBar from "./WrapperTopBar";
-import { fetchUIData } from "../../api/mock/mockDataTopBar";
+import { UIContext } from "../../UIContext.jsx";
+
+
 
 export default function TopBar() {
-    const data = fetchUIData().ui.topBar;
-
+    const contacts = useContext(UIContext).contacts
     return (
         <WrapperTopBar>
-            <Contacts items={data.common} wrapperClass="contacts" />
-            <Contacts items={data.social} wrapperClass="socials" />
+            <Contacts items={contacts.common} wrapperClass="contacts" />
+            <Contacts items={contacts.social} wrapperClass="socials" />
         </WrapperTopBar>
     );
 }
