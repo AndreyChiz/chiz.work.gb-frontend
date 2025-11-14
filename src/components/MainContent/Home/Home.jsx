@@ -10,12 +10,10 @@ export default function Home() {
                     <div className="row align-items-center justify-content-center text-center">
                         <div className="col-md-12 col-lg-7">
                             <h1 data-aos="fade-up" data-aos-delay="">
-                                Welcome to UnEarth
+                                Modern tools <br />for<br /> modern projects
                             </h1>
                             <p className="mb-5" data-aos="fade-up" data-aos-delay={100}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae,
-                                cumque vitae animi.
-                            </p>
+                                Using up-to-date technologies and tools for maximum solution efficiency.                            </p>
                             <p data-aos="fade-up" data-aos-delay={200}>
                                 <a href="#" className="btn btn-outline-white border-w-2 btn-md">
                                     Get in touch
@@ -33,11 +31,10 @@ export default function Home() {
                     <div className="row align-items-center justify-content-center text-center">
                         <div className="col-md-12 col-lg-8">
                             <h1 data-aos="fade-up" data-aos-delay="">
-                                New Generation of Mining
+                                From init to deploy
                             </h1>
                             <p className="mb-5" data-aos="fade-up" data-aos-delay={100}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odit
-                                dolorum voluptates!
+                                Handle the full development cycle
                             </p>
                             <p data-aos="fade-up" data-aos-delay={200}>
                                 <a href="#" className="btn btn-outline-white border-w-2 btn-md">
@@ -57,11 +54,10 @@ export default function Home() {
                     <div className="row align-items-center justify-content-center text-center">
                         <div className="col-md-12 col-lg-8">
                             <h1 data-aos="fade-up" data-aos-delay="">
-                                хуйня плюшевая
+                                Always online
                             </h1>
                             <p className="mb-5" data-aos="fade-up" data-aos-delay={100}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odit
-                                dolorum voluptates!
+                                Ready to help you for 24/7.
                             </p>
                             <p data-aos="fade-up" data-aos-delay={200}>
                                 <a href="#" className="btn btn-outline-white border-w-2 btn-md">
