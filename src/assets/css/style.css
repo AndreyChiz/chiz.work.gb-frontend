@@ -1257,3 +1257,25 @@ h1, h2, h3, h4, h5,
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+
+
+
+
+/* fix overscrol */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.owl-carousel,
+.owl-carousel .owl-stage-outer,
+.owl-carousel .owl-stage {
+  overflow-x: hidden !important;
+}
+
+.img-bg-section {
+  background-size: cover;
+  background-position: center;
+}
