@@ -17,7 +17,9 @@ export function fetchUIData() {
 
                 navMenu: [
                     { label: "Home", href: "#home-section" },
-                    { label: "Services", href: "#services-section" },
+                    {
+                        label: "Services", href: "#services-section", children: [
+                            { label: "Technologies", href: "#technologies-section" },] },
                     {
                         label: "About Us",
                         href: "#about-section",
@@ -69,6 +71,90 @@ export function fetchUIData() {
                             title: "Get in touch",
                             href: "#"
                         }
+                    }
+                ]
+            },
+
+            services: {
+                servicesItems: [
+                    {
+                        id: 1,
+                        imgPath: "images/img_1.jpg",
+                        title: "Land & Property",
+                        reverse: false,
+                        paragraphs: [
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos...",
+                            "Minus perspiciatis ullam itaque voluptas iure vero..."
+                        ],
+                        list: [
+                            "Lorem ipsum dolor.",
+                            "Quod, amet. Provident.",
+                            "Quo, adipisci, quis.",
+                            "Cumque perspiciatis, blanditiis?"
+                        ]
+                    },
+                    {
+                        id: 2,
+                        imgPath: "images/img_2.jpg",
+                        title: "Surface Mining",
+                        reverse: true, // картинка справа
+                        paragraphs: [
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+                            "Minus perspiciatis ullam itaque voluptas iure vero..."
+                        ],
+                        list: [
+                            "Lorem ipsum dolor.",
+                            "Quod, amet. Provident.",
+                            "Quo, adipisci, quis.",
+                            "Cumque perspiciatis, blanditiis?"
+                        ]
+                    },
+
+                ]
+            },
+            technologies: {
+                technologiesItems: [
+                    {
+                        "id": 1,
+                        "icon": "flaticon-mining",
+                        "title": "Surface Mining",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": ""
+                    },
+                    {
+                        "id": 2,
+                        "icon": "flaticon-gold-ingots",
+                        "title": "Gold Nuggets",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": "100"
+                    },
+                    {
+                        "id": 3,
+                        "icon": "flaticon-wagon",
+                        "title": "Soil Carrier",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": "200"
+                    },
+                    {
+                        "id": 4,
+                        "icon": "flaticon-refinery",
+                        "title": "Gold Refinery",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": ""
+                    },
+                    {
+                        "id": 5,
+                        "icon": "flaticon-blacksmith",
+                        "title": "Anvil Blacksmith",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": "100"
+                    },
+                    {
+                        "id": 6,
+                        "icon": "flaticon-crucible",
+                        "title": "Gold Melt Crucible",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": "200"
                     }
                 ]
             }
