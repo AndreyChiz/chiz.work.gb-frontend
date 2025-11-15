@@ -48,7 +48,7 @@ export default function Home() {
 
             <div
                 className="site-section-cover overlay img-bg-section"
-                style={{ backgroundImage: 'url("images/hero_2.jpg")' }}
+                style={{ backgroundImage: 'url("images/main.jpg")' }}
             >
                 <div className="container">
                     <div className="row align-items-center justify-content-center text-center">
