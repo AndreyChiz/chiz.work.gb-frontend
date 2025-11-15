@@ -109,6 +109,52 @@ export function fetchUIData() {
                     },
 
                 ]
+            },
+            technologies: {
+                technologiesItems: [
+                    {
+                        "id": 1,
+                        "icon": "flaticon-mining",
+                        "title": "Surface Mining",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": ""
+                    },
+                    {
+                        "id": 2,
+                        "icon": "flaticon-gold-ingots",
+                        "title": "Gold Nuggets",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": "100"
+                    },
+                    {
+                        "id": 3,
+                        "icon": "flaticon-wagon",
+                        "title": "Soil Carrier",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": "200"
+                    },
+                    {
+                        "id": 4,
+                        "icon": "flaticon-refinery",
+                        "title": "Gold Refinery",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": ""
+                    },
+                    {
+                        "id": 5,
+                        "icon": "flaticon-blacksmith",
+                        "title": "Anvil Blacksmith",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": "100"
+                    },
+                    {
+                        "id": 6,
+                        "icon": "flaticon-crucible",
+                        "title": "Gold Melt Crucible",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
+                        "delay": "200"
+                    }
+                ]
             }
         },
     };
