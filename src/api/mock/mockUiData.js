@@ -71,6 +71,44 @@ export function fetchUIData() {
                         }
                     }
                 ]
+            },
+
+            services: {
+                servicesItems: [
+                    {
+                        id: 1,
+                        imgPath: "images/img_1.jpg",
+                        title: "Land & Property",
+                        reverse: false,
+                        paragraphs: [
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos...",
+                            "Minus perspiciatis ullam itaque voluptas iure vero..."
+                        ],
+                        list: [
+                            "Lorem ipsum dolor.",
+                            "Quod, amet. Provident.",
+                            "Quo, adipisci, quis.",
+                            "Cumque perspiciatis, blanditiis?"
+                        ]
+                    },
+                    {
+                        id: 2,
+                        imgPath: "images/img_2.jpg",
+                        title: "Surface Mining",
+                        reverse: true, // картинка справа
+                        paragraphs: [
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+                            "Minus perspiciatis ullam itaque voluptas iure vero..."
+                        ],
+                        list: [
+                            "Lorem ipsum dolor.",
+                            "Quod, amet. Provident.",
+                            "Quo, adipisci, quis.",
+                            "Cumque perspiciatis, blanditiis?"
+                        ]
+                    },
+
+                ]
             }
         },
     };
