@@ -42,6 +42,36 @@ export function fetchUIData() {
                     { label: "Contact", href: "#contact-section" },
                 ],
             },
+            home: {
+                screens: [
+                    {
+                        id: "1",
+                        imgPath: "images/hero_3.jpg",
+                        title: "Modern tools <br />for<br /> modern projects",
+                        text: "Using up-to-date technologies and tools for maximum solution efficiency",
+                        button: {
+                            title: "Get in touch",
+                            href: "#"
+                        }
+                    },
+                    {
+                        id: "2",
+                        imgPath: "images/hero_2.jpg",
+                        title: "From init to deploy",
+                        text: "Handle the full development cycle"
+                    },
+                    {
+                        id: "3",
+                        imgPath: "images/main.jpg",
+                        title: "Always online",
+                        text: "Ready to help you 24/7.",
+                        button: {
+                            title: "Get in touch",
+                            href: "#"
+                        }
+                    }
+                ]
+            }
         },
     };
 }
