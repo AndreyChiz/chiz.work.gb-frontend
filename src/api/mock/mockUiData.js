@@ -17,7 +17,9 @@ export function fetchUIData() {
 
                 navMenu: [
                     { label: "Home", href: "#home-section" },
-                    { label: "Services", href: "#services-section" },
+                    {
+                        label: "Services", href: "#services-section", children: [
+                            { label: "Technologies", href: "#technologies-section" },] },
                     {
                         label: "About Us",
                         href: "#about-section",
