@@ -1263,19 +1263,9 @@ h1, h2, h3, h4, h5,
 
 
 /* fix overscrol */
-
 html,
 body {
   overflow-x: hidden;
-}
-
-.owl-carousel,
-.owl-carousel .owl-stage-outer,
-.owl-carousel .owl-stage {
-  overflow-x: hidden !important;
-}
-
-.img-bg-section {
-  background-size: cover;
-  background-position: center;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
 }
