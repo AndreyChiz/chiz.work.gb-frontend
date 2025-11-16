@@ -1,5 +1,6 @@
 import About from "./About/About"
 import Home from "./Home/Home"
+import Press from "./Press/Press"
 import Pricing from "./Pricing/Pricing"
 import Services from "./Services/Services"
 import Team from "./Team/Team"
@@ -14,6 +15,7 @@ export default function MainContent() {
             <About />
             <Team />
             <Pricing />
+            <Press/>
         </>
     )
 }

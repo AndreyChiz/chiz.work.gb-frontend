@@ -431,6 +431,36 @@ export function fetchUIData() {
                     ],
                 },
             },
+            press: {
+                title: "Press",
+                pressItems: [
+                    {
+                        id: 1,
+                        date: "Apr 19, 2019",
+                        title: "How To Find Gold In Mining",
+                        href: "press-single.html",
+                        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis, perferendis molestias commodi adipisci.",
+                        delay: 0
+                    },
+                    {
+                        id: 2,
+                        date: "Apr 19, 2019",
+                        title: "How To Find Gold In Mining",
+                        href: "press-single.html",
+                        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis, perferendis molestias commodi adipisci.",
+                        delay: 100
+                    },
+                    {
+                        id: 3,
+                        date: "Apr 19, 2019",
+                        title: "How To Find Gold In Mining",
+                        href: "press-single.html",
+                        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis, perferendis molestias commodi adipisci.",
+                        delay: 200
+                    }
+                ]
+
+            }
         },
     };
 }
