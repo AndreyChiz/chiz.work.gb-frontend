@@ -20,12 +20,12 @@ function NavItem({ item }) {
 export default function HeaderNavMenu({menuItems}) {
 
     return (
-        <nav className="site-navigation text-right ml-auto" role="navigation">
+        
             <ul className="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                 {menuItems.map((item, index) => (
                     <NavItem key={index} item={item} />
                 ))}
             </ul>
-        </nav>
+        
     );
 }
