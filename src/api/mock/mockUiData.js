@@ -19,7 +19,8 @@ export function fetchUIData() {
                     { label: "Home", href: "#home-section" },
                     {
                         label: "Services", href: "#services-section", children: [
-                            { label: "Technologies", href: "#technologies-section" },] },
+                            { label: "Technologies", href: "#technologies-section" },]
+                    },
                     {
                         label: "About Us",
                         href: "#about-section",
@@ -156,6 +157,20 @@ export function fetchUIData() {
                         "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.",
                         "delay": "200"
                     }
+                ]
+            },
+            about: {
+                videoFarme: {
+                    img: "images/hero_1.jpg",
+                    videoUrl: "https://vimeo.com/45830194",
+                    ratio: 2,
+                    alt: "Hero Video"
+                },
+                achivesData: [
+                    { id: 1, title: "Projects", number: 8, delay: 0 },
+                    { id: 2, title: "Expert Engineers", number: 300, delay: 100 },
+                    { id: 3, title: "Number of Employees", number: 2000, delay: 200 },
+                    { id: 4, title: "Number of Golds", number: 1500, delay: 300 }
                 ]
             }
         },
