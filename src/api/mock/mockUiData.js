@@ -172,6 +172,88 @@ export function fetchUIData() {
                     { id: 3, title: "Number of Employees", number: 2000, delay: 200 },
                     { id: 4, title: "Number of Golds", number: 1500, delay: 300 }
                 ]
+            },
+            team: {
+                description: {
+                    title: "The best team",
+                    text: "We dsvkmla;v askmasv lkvmaslkva avd'klmasvlkva asvklmsadlk asv'msa sdl'avlkm"
+
+                },
+                employes: [
+                    {
+                        id: 1,
+                        name: "Jean Smith",
+                        role: "Mining Expert",
+                        img: "images/person_1.jpg",
+                        delay: 0,
+                        socials: {
+                            facebook: "#",
+                            twitter: "#",
+                            instagram: "#"
+                        }
+                    },
+                    {
+                        id: 2,
+                        name: "Bob Carry",
+                        role: "Project Manager",
+                        img: "images/person_2.jpg",
+                        delay: 100,
+                        socials: {
+                            facebook: "#",
+                            twitter: "#",
+                            instagram: "#"
+                        }
+                    },
+                    {
+                        id: 3,
+                        name: "Ricky Fisher",
+                        role: "Engineer",
+                        img: "images/person_1.jpg",
+                        delay: 200,
+                        socials: {
+                            facebook: "#",
+                            twitter: "#",
+                            instagram: "#"
+                        }
+                    },
+                    {
+                        id: 4,
+                        name: "Jean Smith",
+                        role: "Mining Expert",
+                        img: "images/person_2.jpg",
+                        delay: 0,
+                        socials: {
+                            facebook: "#",
+                            twitter: "#",
+                            instagram: "#"
+                        }
+                    },
+                    {
+                        id: 5,
+                        name: "Bob Carry",
+                        role: "Project Manager",
+                        img: "images/person_1.jpg",
+                        delay: 100,
+                        socials: {
+                            facebook: "#",
+                            twitter: "#",
+                            instagram: "#"
+                        }
+                    },
+                    {
+                        id: 6,
+                        name: "Ricky Fisher",
+                        role: "Engineer",
+                        img: "images/person_2.jpg",
+                        delay: 200,
+                        socials: {
+                            facebook: "#",
+                            twitter: "#",
+                            instagram: "#"
+                        }
+                    }
+                ]
+
             }
         },
     };
