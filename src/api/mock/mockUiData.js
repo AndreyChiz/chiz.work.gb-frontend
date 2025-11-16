@@ -254,7 +254,73 @@ export function fetchUIData() {
                     }
                 ]
 
-            }
+            },
+            pricing: {
+                description: {
+                    title: "The best ricing",
+                    text: "We dsvkmla;v askmasv lkvmaslkva avd'klmasvlkva asvklmsadlk asv'msa sdl'avlkm"
+                },
+                plans: [
+                    {
+                        id: 1,
+                        title: "Basic",
+                        price: 47,
+                        period: "year",
+                        delay: "",
+                        features: [
+                            { text: "Officia quaerat eaque neque", active: true },
+                            { text: "Possimus aut consequuntur incidunt", active: true },
+                            { text: "Lorem ipsum dolor sit amet", active: false },
+                            { text: "Consectetur adipisicing elit", active: false },
+                            { text: "Dolorum esse odio quas architecto sint", active: false }
+                        ],
+                        buttonClass: "btn btn-secondary btn-md",
+                    },
+                    {
+                        id: 2,
+                        title: "Premium",
+                        price: 200,
+                        period: "year",
+                        delay: 100,
+                        features: [
+                            { text: "Officia quaerat eaque neque", active: true },
+                            { text: "Possimus aut consequuntur incidunt", active: true },
+                            { text: "Lorem ipsum dolor sit amet", active: true },
+                            { text: "Consectetur adipisicing elit", active: true },
+                            { text: "Dolorum esse odio quas architecto sint", active: false }
+                        ],
+                        buttonClass: "btn btn-primary btn-md text-white",
+                    },
+                    {
+                        id: 3,
+                        title: "Professional",
+                        price: 750,
+                        period: "year",
+                        delay: 200,
+                        features: [
+                            { text: "Officia quaerat eaque neque", active: true },
+                            { text: "Possimus aut consequuntur incidunt", active: true },
+                            { text: "Lorem ipsum dolor sit amet", active: true },
+                            { text: "Consectetur adipisicing elit", active: true },
+                            { text: "Dolorum esse odio quas architecto sint", active: true }
+                        ],
+                        buttonClass: "btn btn-secondary btn-md",
+                    }
+                ],
+                faq:{
+                    title: "FAQ list",
+                    questions: [
+                        { id: 1, question: "Can I accept both Paypal and Stripe?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis." },
+                        { id: 2, question: "What available is refund period?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis." },
+                        { id: 3, question: "Can I accept both Paypal and Stripe?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis." },
+                        { id: 4, question: "What available is refund period?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis." },
+                        { id: 5, question: "Where are you from?", answer: "Voluptatum nobis obcaecati perferendis dolor totam unde dolores quod maxime corporis officia et. Distinctio assumenda minima maiores." },
+                        { id: 6, question: "What is your opening time?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis." },
+                        { id: 7, question: "Can I accept both Paypal and Stripe?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis." },
+                        { id: 8, question: "What available is refund period?", answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis." }
+                    ]
+                }
+}
         },
     };
 }
