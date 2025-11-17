@@ -14,7 +14,7 @@ export default function Technologies() {
 
     const technologiesItems = useContext(UIContext).technologies.technologiesItems
 
-    console.log(technologiesItems)
+
     return (<WrapperTechnologies>
         <TechnologiesList technologiesItems={technologiesItems} />
     </WrapperTechnologies>)

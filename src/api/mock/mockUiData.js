@@ -513,9 +513,21 @@ export function fetchUIData() {
                         "url": "single.html"
                     }
                 ]
+            },
+            contactUs:{
+                title: "Contact us",
+                contactUsDialog: {
+                    saccessSend: "Сообщение успешно отправлено!"
+                },
 
-
-
+                contactUsBlockContent: {
+                    "title": "Need to know more on details. Get In Touch",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, distinctio! Harum quibusdam nisi, illum nulla aspernatur aut quidem aperiam, quae non tempora recusandae voluptatibus fugit impedit.",
+                    "button": {
+                        "label": "Get Started",
+                        "href": "#"
+                    }
+                }
 
             }
         },
