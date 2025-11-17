@@ -5,6 +5,7 @@ import Pricing from "./Pricing/Pricing"
 import Services from "./Services/Services"
 import Team from "./Team/Team"
 import Technologies from "./Technologies/Technologies"
+import Testiomonials from "./Testiomonials/Testimonials"
 
 export default function MainContent() {
     return (
@@ -15,7 +16,8 @@ export default function MainContent() {
             <About />
             <Team />
             <Pricing />
-            <Press/>
+            <Press />
+            <Testiomonials />
         </>
     )
 }

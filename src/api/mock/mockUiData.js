@@ -460,6 +460,36 @@ export function fetchUIData() {
                     }
                 ]
 
+            },
+            testimonials:{
+                title: "Testimonials",
+                testimonialsItems: [
+                    {
+                        "id": 1,
+                        "name": "Ricky Fisher",
+                        "image": "images/person_4.jpg",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit.."
+                    },
+                    {
+                        "id": 2,
+                        "name": "Ken Davis",
+                        "image": "images/person_2.jpg",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit.."
+                    },
+                    {
+                        "id": 3,
+                        "name": "Mellisa Griffin",
+                        "image": "images/person_1.jpg",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit...."
+                    },
+                    {
+                        "id": 4,
+                        "name": "Robert Steward",
+                        "image": "images/person_3.jpg",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit..Lorem ipsum dolor sit amet, consectetur adipisicing elit...."
+                    }
+                ]
+
             }
         },
     };
