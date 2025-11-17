@@ -490,6 +490,33 @@ export function fetchUIData() {
                     }
                 ]
 
+            },
+            blog: {
+                title : "Blog",
+                blogItems: [
+                    {
+                        "id": 1,
+                        "image": "images/hero_2.jpg",
+                        "title": "How To Find Gold In Mining",
+                        "date": "January 18, 2019",
+                        "author": "James Cooper",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et suscipit iste libero neque. Vitae quidem ducimus voluptatibus nemo cum odio ab enim nisi, itaque, libero fuga veritatis culpa quis!",
+                        "url": "single.html"
+                    },
+                    {
+                        "id": 2,
+                        "image": "images/hero_3.jpg",
+                        "title": "How To Find Gold In Mining",
+                        "date": "January 18, 2019",
+                        "author": "James Cooper",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et suscipit iste libero neque. Vitae quidem ducimus voluptatibus nemo cum odio ab enim nisi, itaque, libero fuga veritatis culpa quis!",
+                        "url": "single.html"
+                    }
+                ]
+
+
+
+
             }
         },
     };
