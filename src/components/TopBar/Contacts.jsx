@@ -12,7 +12,7 @@ function ContactItem({ label, icon, href }) {
 
 }
 
-export function Contacts({ items, children }) {
+export function Contacts({ items }) {
     return (
         <>
             {items.map((item, index) => (
