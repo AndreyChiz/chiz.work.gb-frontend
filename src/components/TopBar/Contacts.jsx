@@ -1,17 +1,26 @@
-import {Fragment} from "react";
+import { Fragment } from "react";
 
-export function Contacts({ items, wrapperClass }) {
+
+function ContactItem({ label, icon, href }) {
+
     return (
-        <div className={wrapperClass}>
+        <a href={href} className="text-white">
+            <span className={`mr-2 text-white ${icon}`}></span>
+            <span className="d-none d-md-inline-block">{label}</span>
+        </a>
+    )
+
+}
+
+export function Contacts({ items, children }) {
+    return (
+        <>
             {items.map((item, index) => (
                 <Fragment key={index}>
-                    <a href={item.href} className="text-white">
-                        <span className={`mr-2 text-white ${item.icon}`}></span>
-                        <span className="d-none d-md-inline-block">{item.label}</span>
-                    </a>
+                    <ContactItem {...item} />
                     {index < items.length - 1 && <span className="mx-md-2 d-inline-block"></span>}
                 </Fragment>
             ))}
-        </div>
+        </>
     );
 }

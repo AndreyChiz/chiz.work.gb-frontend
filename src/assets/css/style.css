@@ -1812,14 +1812,10 @@ h5,
 
 
 
-/* fix overscrol TODO: fix this */
+/* fix overscrol */
 html,
 body {
-
+  overflow-x: hidden;
   overscroll-behavior-x: none;
   touch-action: pan-y;
 }
-
-/* .container {
-  padding-left: 0;
-  padding-right: 0;

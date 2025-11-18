@@ -4,6 +4,7 @@ import MainContent from "./components/MainContent/MainContent";
 import GlobalWrapper from "./components/global/GlobalWrapper";
 
 import { UIProvider } from "./UIContext";
+import Footer from "./components/Footer/Footer";
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <TopBar />
         <Header />
         <MainContent />
+        <Footer />
 
       </GlobalWrapper>
     </UIProvider>
