@@ -9,8 +9,8 @@ export default function TopBar() {
     const contacts = useContext(UIContext).contacts
     return (
         <WrapperTopBar>
-            <Contacts items={contacts.common} wrapperClass="contacts" />
-            <Contacts items={contacts.social} wrapperClass="socials" />
+            <Contacts items={contacts.common}  />
+            <Contacts items={contacts.social} />
         </WrapperTopBar>
     );
 }
