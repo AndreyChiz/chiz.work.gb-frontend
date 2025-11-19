@@ -461,7 +461,7 @@ export function fetchUIData() {
                 ]
 
             },
-            testimonials:{
+            testimonials: {
                 title: "Testimonials",
                 testimonialsItems: [
                     {
@@ -492,7 +492,7 @@ export function fetchUIData() {
 
             },
             blog: {
-                title : "Blog",
+                title: "Blog",
                 blogItems: [
                     {
                         "id": 1,
@@ -514,7 +514,7 @@ export function fetchUIData() {
                     }
                 ]
             },
-            contactUs:{
+            contactUs: {
                 title: "Contact us",
                 contactUsDialog: {
                     saccessSend: "Сообщение успешно отправлено!"
@@ -529,6 +529,24 @@ export function fetchUIData() {
                     }
                 }
 
+            },
+            footer: {
+                aboutUs: {
+                    title: "about us",
+                    text: "lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem.Amet aliquid nesciunt veritatis aliquam."
+                },
+                featuresList: {
+                    title: "Features",
+                    items: [
+                        { href: "#", text: "About Us" },
+                        { href: "#", text: "Press Releases" },
+                        { href: "#", text: "Testimonials" },
+                        { href: "#", text: "Terms of Service" },
+                        { href: "#", text: "Privacy" },
+                        { href: "#", text: "Contact Us" },
+
+                    ]
+                }
             }
         },
     };
